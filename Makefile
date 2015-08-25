@@ -8,3 +8,6 @@ all:
 	gcc -I. -c get_rss.c
 	ar rvs $(LIB_TARGET) get_rss.o
 	rm get_rss.o
+
+install:
+	cp -f $(LIB_TARGET) /usr/local/lib/
